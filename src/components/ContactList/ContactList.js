@@ -18,7 +18,7 @@ function ContactList() {
   }, [dispatch]);
 
   return (
-    <div>
+    <div className={s.listContainer}>
       <ul className={s.list}>
         {contacts.map(contact => (
           <li key={contact.id} className={s.listItem}>

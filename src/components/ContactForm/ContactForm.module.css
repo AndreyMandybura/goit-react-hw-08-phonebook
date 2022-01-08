@@ -1,22 +1,29 @@
-.form {
-  display: inline-flex;
-  flex-direction: column;
+.container {
+  display: inline-block;
+  justify-content: center;
   border: 2px solid black;
-  width: 250px;
+  width: 350px;
   padding: 30px;
 }
 
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
 .button {
-  width: 245px;
+  width: 250px;
 }
 
 .label {
-  width: 250px;
+  width: 300px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .inputName {
   width: 170px;
-  margin-left: 29px;
+  margin-left: 15px;
   margin-bottom: 15px;
 }
 

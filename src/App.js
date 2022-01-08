@@ -2,17 +2,17 @@ import { useEffect, lazy, Suspense } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Routes, Route } from 'react-router-dom';
 import Container from './components/Container/Container';
-import AppBar from './components/AppBar';
+import AppBar from './components/AppBar/AppBar';
 import Loader from './components/Loader/Loader';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import PublicRoute from './components/PublicRoute/PublicRoute';
 import { authOperations, authSelectors } from './redux/auth';
 
-const HomeView = lazy(() => import('./views/HomeView'));
-const RegisterView = lazy(() => import('./views/RegisterView'));
-const LoginView = lazy(() => import('./views/LoginView'));
-const ContactsView = lazy(() => import('./views/ContactsView'));
-const NotFoundView = lazy(() => import('./views/NotFoundView'));
+const HomeView = lazy(() => import('./views/HomeView/HomeView'));
+const RegisterView = lazy(() => import('./views/RegisterView/RegisterView'));
+const LoginView = lazy(() => import('./views/LoginView/LoginView'));
+const ContactsView = lazy(() => import('./views/ContactsView/ContactsView'));
+const NotFoundView = lazy(() => import('./views/NotFoundView/NotFoundView'));
 
 export default function App() {
   const dispatch = useDispatch();
